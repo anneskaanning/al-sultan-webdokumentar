@@ -266,6 +266,7 @@ footer a {
 
     main p {
         font-size: 1.2em;
+        hyphens: auto;
     }
 
     main h3 {
@@ -280,7 +281,7 @@ footer a {
 
     .kunder-container .lyd {
         width: 33%;
-        padding: 20px;
+        padding: 15px;
     }
 
     .kunder-container img {
