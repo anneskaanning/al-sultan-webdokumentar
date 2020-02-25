@@ -1,0 +1,302 @@
+html {
+    font-family: "nanum gothic", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(../images/moenster.jpg);
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
+header {
+    background-color: #560008;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    padding: 18px 0;
+}
+
+/*MAIN-INDHOLD*/
+
+main {
+    font-size: 0.8em;
+}
+
+main h3 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #b87333;
+}
+
+main p {
+    padding: 10px;
+}
+
+.pynt {
+    width: 80%;
+    margin-top: -10%;
+}
+
+
+
+/*INTRO VIDEO*/
+
+.intro-video,
+.familiefad-video {
+    width: 100%;
+}
+
+
+
+
+/*INTRO TEKST*/
+
+.intro-tekst,
+.tekst-om-familiefad {
+    text-align: center;
+    margin: 0 40px;
+    padding: 15px 0;
+}
+
+.tekst-om-familiefad a {
+    color: black;
+}
+
+
+/* SLIDESHOW*/
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1500px;
+    position: relative;
+    margin: auto;
+}
+
+/* frem og tilbage knap */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* sætter frem-knappen til højre */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* piletasterne får ved hover her en lille smule transparens */
+.prev:hover,
+.next:hover {
+    background-color: none;
+}
+
+/* billede tekst */
+.text {
+    color: white;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* billede nummer eks. 1/3 osv */
+.numbertext {
+    color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* Fade af billeder - animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .3
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .3
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*KUNDER MED LYD*/
+
+.kunder-container {
+    display: flex;
+    flex-direction: column;
+    display: block;
+    margin: 0 auto;
+    width: 55%;
+    text-align: center;
+}
+
+.kunder-container p {
+    padding: 0 10%;
+}
+
+.kunde {
+    width: 100%;
+}
+
+.lyd {
+    padding: 10px;
+}
+
+.ikon {
+    font-size: 40px;
+}
+
+.ikon:hover {
+    color: #560008;
+    cursor: pointer;
+}
+
+
+/*FOOTER*/
+
+footer {
+    padding: 30px 0;
+    background: #560008;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer h3 {
+    font-size: 20px;
+    color: #b87333;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+footer img {
+    padding-top: 10px;
+}
+
+.ur {
+    width: 35px;
+}
+
+.pin {
+    width: 25px;
+}
+
+.map {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.bus {
+    width: 28px;
+    padding-top: 20px;
+}
+
+.tlf {
+    width: 35px;
+    padding-top: 20px;
+}
+
+.kontakt {
+    width: 35px;
+    padding: 0 7px;
+    color: #560008;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+
+/* Extra small devices (phones, 600px and down) KUN HELT SPECIFIKT FOR MOBIL SOM IKKE KAN STÅ HEROVER */
+@media all and (max-width: 599px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media all and (min-width: 768px) {
+
+
+    header img {
+        width: 25%;
+    }
+
+    header,
+    main {
+        margin: 0 12%;
+    }
+
+
+    main p {
+        font-size: 1.2em;
+    }
+
+    main h3 {
+        font-size: 2em;
+    }
+
+    .kunder-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .kunder-container .lyd {
+        width: 33%;
+        padding: 20px;
+    }
+
+    .kunder-container img {
+        width: 50%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    footer h3 {
+        font-size: 20px;
+    }
+
+    footer .map {
+        width: 45%;
+    }
+
+}
